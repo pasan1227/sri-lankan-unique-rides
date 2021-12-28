@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import FormContainer from '../components/FormContainer';
-import CheckoutSteps from '../components/CheckoutSteps';
 import { login } from '../actions/userActions';
 
 const LoginScreen = ({ location, history }) => {
@@ -32,7 +31,6 @@ const LoginScreen = ({ location, history }) => {
 
   return (
     <FormContainer>
-      <CheckoutSteps step1 />
       <h1>Sign In</h1>
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
