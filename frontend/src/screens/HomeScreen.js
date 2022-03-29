@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Col, Row } from 'react-bootstrap';
@@ -55,6 +56,11 @@ const HomeScreen = ({ match }) => {
           />
         </>
       )}
+      <MessengerCustomerChat
+        pageId='<472332599873358>'
+        appId='<3231097900455330>'
+        htmlRef='<REF_STRING>'
+      />
     </>
   );
 };
